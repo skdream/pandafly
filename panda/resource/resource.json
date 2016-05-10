@@ -1,0 +1,35 @@
+{
+	"groups":[
+	{
+		"keys":"bgPng_json,pander_sp_json,HelloBitmapFont_fnt,bigpanda_png,bigpanda_json",
+		"name":"preload"
+	}],
+	"resources":[
+	{
+		"name":"bgPng_json",
+		"subkeys":"green,blue,yellow,purple",
+		"type":"sheet",
+		"url":"assets/bgPng.json"
+	},
+	{
+		"name":"pander_sp_json",
+		"subkeys":"showScore,share,fyzg3,lv5,tips,lv6,lv2,lv3,knife,common,share_1,infernal_score,lv4,score,startBg,restart,lv1,inferno,frame,knife2",
+		"type":"sheet",
+		"url":"assets/pander_sp.json"
+	},
+	{
+		"name":"HelloBitmapFont_fnt",
+		"type":"font",
+		"url":"assets/HelloBitmapFont.fnt"
+	},
+	{
+		"name":"bigpanda_png",
+		"type":"image",
+		"url":"assets/bigpanda.png"
+	},
+	{
+		"name":"bigpanda_json",
+		"type":"json",
+		"url":"assets/bigpanda.json"
+	}]
+}

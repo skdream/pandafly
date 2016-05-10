@@ -1,0 +1,122 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>飞檐走棍</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+
+    <style>
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+            overflow: hidden;
+        }
+        canvas {
+            display:block;
+            position:absolute;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+        }
+    </style>
+	<style>
+		#toolbar {
+		  position: absolute;
+		  bottom: 2%;
+		  text-align: center;
+		  z-index: 99;
+		  margin: auto;
+		  width: 80%;
+		  left: 10%;
+		  z-index: 999;
+		  display: none;
+				  
+				}
+				#toolbar .btn{
+					width: 40%;
+		  padding: 10px 10px;
+		  color: rgb(249, 244, 244);
+		    background-color: rgb(14, 3, 3);
+		  margin: auto;
+		  text-align: center;
+		  border-radius: 5px;
+		  font-weight: bold;
+		  border: none;
+		  font-size:18x;
+		  margin: 1%;
+		}
+	</style>
+
+<link rel="stylesheet" type="text/css" href="./launcher/game9g.css">
+<!-- 	<script src="./launcher/game9g.js"></script> -->
+</head>
+<body>
+	<div id="toolbar" >
+		<button class="btn" ontouchstart="dp_share();">炫耀一下</button>
+		<button class="btn" ontouchstart="clickMore();">更多游戏</button>
+	</div>
+<div style="position:relative;" id="gameDiv"></div>
+<script>var document_class = "Main";</script><!--这部分内容在编译时会被替换，要修改文档类，请到工程目录下的egretProperties.json内编辑。-->
+<script src="launcher/egret_require.js"></script>
+<script src="launcher/egret_loader.js"></script>
+<script src="launcher/encode.js"></script>
+<script src="launcher/game-min.js"></script>
+<script src="./launcher/meiriq_loading.js"></script>
+<script src="launcher/meiriq_market.js"></script>
+<script>
+    egret_h5.startGame();
+</script>
+<script language=javascript>
+
+       //  var game9g = new Game9G("fyzg");
+       // game9g.shareData.title = "飞檐走棍这熊猫可要虐你到极致了";
+       // game9g.shareData.content = "地狱模式再度出征";
+	
+		function goHome(){
+			//window.location=game9g.homeurl;
+		}
+		function clickMore(){
+			// window.location=game9g.moreurl;
+		}
+		function dp_share(){
+			//game9g.share();
+		}
+		function dp_Ranking(){
+			//window.location=game9g.homeurl;
+		}
+
+		function showAd(){
+		}
+		function hideAd(){
+		}
+		function dp_submitScore(score){
+			if(score>0){
+				//game9g.score =parseInt(score);
+				//game9g.scoreName = "越过"+score+"道刀刃防御";
+				//game9g.shareData.title ="地狱模式再度出征，飞檐走棍功夫高，轻松越过"+score+"道刀刃防御！你行吗";
+				//game9g.utils.shareConfirm("你在《飞檐走棍》得了"+score+"分!通知一下小伙伴吧!",dp_share);
+			}
+		}
+	</script> 
+	<div style="display: none;">
+	<!-- 	<script type="text/javascript">
+			game9g.utils.tongji();
+		</script>	 -->					
+	</div>
+</body>
+</html>
