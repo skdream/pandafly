@@ -1,52 +1,52 @@
 {
 	"groups": [
 		{
-			"name": "preload",
-			"keys": "bgImage,egretIcon,bgPng_json,pander_sp_json,HelloBitmapFont_fnt,bigpanda_png,bigpanda_json"
+			"keys": "bgImage,egretIcon,bgPng_json,pander_sp_json,HelloBitmapFont_fnt,bigpanda_png,bigpanda_json",
+			"name": "preload"
 		}
 	],
 	"resources": [
 		{
-			"name": "bgImage",
+			"url": "assets/bg.jpg",
 			"type": "image",
-			"url": "assets/bg.jpg"
+			"name": "bgImage"
 		},
 		{
-			"name": "egretIcon",
+			"url": "assets/egret_icon.png",
 			"type": "image",
-			"url": "assets/egret_icon.png"
+			"name": "egretIcon"
 		},
 		{
-			"name": "description",
+			"url": "config/description.json",
 			"type": "json",
-			"url": "config/description.json"
+			"name": "description"
 		},
 		{
-			"name":"bgPng_json",
-			"subkeys":"green,blue,yellow,purple",
-			"type":"sheet",
-			"url":"assets/bgPng.json"
+			"url": "assets/bgPng.json",
+			"type": "sheet",
+			"name": "bgPng_json",
+			"subkeys": "green,blue,yellow,purple"
 		},
 		{
-			"name":"pander_sp_json",
-			"subkeys":"showScore,share,fyzg3,lv5,tips,lv6,lv2,lv3,knife,common,share_1,infernal_score,lv4,score,startBg,restart,lv1,inferno,frame,knife2",
-			"type":"sheet",
-			"url":"assets/pander_sp.json"
+			"url": "assets/pander_sp.json",
+			"type": "sheet",
+			"name": "pander_sp_json",
+			"subkeys": "showScore,share,fyzg3,lv5,tips,lv6,lv2,lv3,knife,common,share_1,infernal_score,lv4,score,startBg,restart,lv1,inferno,frame,knife2"
 		},
 		{
-			"name":"HelloBitmapFont_fnt",
-			"type":"font",
-			"url":"assets/HelloBitmapFont.fnt"
+			"url": "assets/HelloBitmapFont.fnt",
+			"type": "font",
+			"name": "HelloBitmapFont_fnt"
 		},
 		{
-			"name":"bigpanda_png",
-			"type":"image",
-			"url":"assets/bigpanda.png"
+			"url": "assets/bigpanda.png",
+			"type": "image",
+			"name": "bigpanda_png"
 		},
 		{
-			"name":"bigpanda_json",
-			"type":"json",
-			"url":"assets/bigpanda.json"
+			"url": "assets/bigpanda.json",
+			"type": "sheet",
+			"name": "bigpanda_json"
 		}
 	]
 }
